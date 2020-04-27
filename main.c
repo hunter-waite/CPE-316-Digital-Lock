@@ -22,8 +22,10 @@ int main(void)
             {
                 reset_lock(&charPosition, &unlocked, &passReset);
             }
-            else if(passReset){                     // resetting the password
-                if(temp != '#'){
+            else if(passReset)
+            {                     // resetting the password
+                if(temp != '#')
+                {
                     Write_Char_LCD(temp);           // write character to screen
                     password[passReset-1] = temp;   // change password at index to new character
                     passReset++;                    // increment index
